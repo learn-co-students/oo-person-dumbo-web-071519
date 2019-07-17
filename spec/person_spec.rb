@@ -1,8 +1,12 @@
+require 'pry'
+
+
 RSpec.describe 'Person' do
   let(:stella) { Person.new('Stella') }
   let(:blanche) { Person.new('Blanche') }
   let(:people) { [stella, blanche] }
   let!(:name_hash) { { stella => 'Stella', blanche => 'Blanche' } }
+
 
   context 'instantiation' do
     describe '::new' do
