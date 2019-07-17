@@ -1,7 +1,7 @@
 # your code goes here
 
 class Person
-  attr_reader :name
+  attr_reader :name, :happiness, :hygiene
   attr_writer :happiness, :hygiene
   attr_accessor :bank_account
   
@@ -47,8 +47,8 @@ class Person
     if topic == "politics"
       person_arg.happiness -= 1
       self.happiness -= 1
-      
       return "blah blah partisan blah lobbyist"
+      
     elsif topic == "weather"
     
       person_arg.happiness += 1
