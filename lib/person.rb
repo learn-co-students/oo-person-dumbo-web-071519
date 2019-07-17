@@ -30,6 +30,22 @@ class Person
     "♪ Rub-a-dub just relaxing in the tub ♫"
   end
   
+  def work_out
+    
+    @happiness += 2
+    @hygiene -= 3
+    "♪ another one bites the dust ♫"
+  end
+  
+  def call_friend(friend)
+    @happiness += 3
+    friend.happiness += 3
+    "Hi #{friend.name}! It's #{self.name}. How are you?"
+  end
+  
+  
+  
+  
 end
 
 
