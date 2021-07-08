@@ -1,4 +1,5 @@
-RSpec.describe 'Person' do
+#require 'pry'
+RSpec.describe 'Person' do 
   let(:stella) { Person.new('Stella') }
   let(:blanche) { Person.new('Blanche') }
   let(:people) { [stella, blanche] }
@@ -154,6 +155,7 @@ RSpec.describe 'Person' do
 
       it 'calls on the #hygiene= method to increment hygiene' do
         penelope.hygiene = 9
+        #binding.pry
         expect(penelope).to receive(:hygiene=).with(13).and_return(10)
         penelope.take_bath
       end
